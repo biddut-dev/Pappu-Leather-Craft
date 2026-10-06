@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-dark: #0B0B0B;
+    --bg-card: #141414;
+    --bg-surface: #1B1B1B;
+    --border-dark: #272727;
+    --border-light: #383838;
+    --leather-brown: #8B5E3C;
+    --leather-warm: #A47551;
+    --leather-cream: #F3EDE3;
+    --leather-gold: #C5A059;
+    --text-primary: #FFFFFF;
+    --text-secondary: #B0B0B0;
+    --text-muted: #737373;
+  }
+
+  body {
+    background-color: var(--bg-dark);
+    color: var(--text-primary);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    overflow-x: hidden;
+    selection-background-color: #8B5E3C;
+    selection-color: #FFFFFF;
+  }
+
+  /* Custom scrollbar for editorial dark feel */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0B0B0B;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #2E2E2E;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #8B5E3C;
+  }
+}
+
+/* Custom utility classes */
+.editorial-heading {
+  font-family: var(--font-serif), Georgia, serif;
+  letter-spacing: -0.02em;
+}
+
+.subtle-leather-glow:hover {
+  box-shadow: 0 8px 30px rgba(139, 94, 60, 0.15);
+}
+
+.text-gold-gradient {
+  background: linear-gradient(135deg, #F3EDE3 0%, #A47551 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
